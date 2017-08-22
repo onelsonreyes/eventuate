@@ -1,5 +1,25 @@
+.nb-gradle
+.nb-gradle-properties
+.gradle
+.settings/
+.classpath
+.project
+build/
+data/
+out/
+# Ignore Gradle GUI config
+gradle-app.setting
 
-\.idea/
-\.gradle/
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
 
-eventuate\.iml
+/bin/
+classes/
+
+## Directory-based project format:
+.idea/
+
+## File-based project format:
+*.ipr
+*.iws
+*.iml
