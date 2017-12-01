@@ -1,8 +1,8 @@
-package com.karadak.eventuate.backend.config;
+package com.karadak.emitter.backend.config;
 
-import com.karadak.eventuate.backend.aggregate.RestaurantAggregate;
-import com.karadak.eventuate.backend.command.RestaurantCommand;
-import com.karadak.eventuate.backend.service.RestaurantService;
+import com.karadak.emitter.backend.aggregate.RestaurantAggregate;
+import com.karadak.emitter.backend.command.RestaurantCommand;
+import com.karadak.emitter.backend.service.RestaurantService;
 import io.eventuate.AggregateRepository;
 import io.eventuate.EventuateAggregateStore;
 import org.springframework.context.annotation.Bean;

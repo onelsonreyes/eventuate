@@ -24,18 +24,19 @@ repositories {
 
 
 dependencies {
+    compile project(":common-event")
+
     compile('org.springframework.boot:spring-boot-starter')
 
-    compile("org.projectlombok:lombok:1.16.16")
+    compile("org.projectlombok:lombok:1.16.18")
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
 
-//    eventuate
+    //eventuate
     compile "io.eventuate.client.java:eventuate-client-java-spring:$eventuateClientVersion"
     compile "io.eventuate.local.java:eventuate-local-java-jdbc:${eventuateLocalVersion}"
     compile "io.eventuate.local.java:eventuate-local-java-embedded-cdc-autoconfigure:${eventuateLocalVersion}"
 
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
-
-    testCompile "io.eventuate.client.java:eventuate-client-java-jdbc:$eventuateClientVersion"
+    testCompile("io.eventuate.client.java:eventuate-client-java-jdbc:$eventuateClientVersion")
 }

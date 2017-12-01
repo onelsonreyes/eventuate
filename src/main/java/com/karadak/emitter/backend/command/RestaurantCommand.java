@@ -1,4 +1,4 @@
-package com.karadak.eventuate.backend.command;
+package com.karadak.emitter.backend.command;
 
 import io.eventuate.Command;
 

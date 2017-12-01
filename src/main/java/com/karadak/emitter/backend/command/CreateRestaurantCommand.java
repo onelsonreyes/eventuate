@@ -1,6 +1,6 @@
-package com.karadak.eventuate.backend.command;
+package com.karadak.emitter.backend.command;
 
-import com.karadak.eventuate.backend.model.CreateRestaurantRequest;
+import com.karadak.common.model.CreateRestaurantRequest;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,8 +1,8 @@
-package com.karadak.eventuate.backend.controller;
+package com.karadak.emitter.backend.controller;
 
-import com.karadak.eventuate.backend.model.CreateRestaurantRequest;
-import com.karadak.eventuate.backend.model.CreateRestaurantResponse;
-import com.karadak.eventuate.backend.service.RestaurantService;
+import com.karadak.common.model.CreateRestaurantRequest;
+import com.karadak.common.model.CreateRestaurantResponse;
+import com.karadak.emitter.backend.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,7 +27,7 @@ public class RestaurantController {
         return "The name";
     }
 
-    @PostMapping(value = "/restaurants/{id}")
+    @PostMapping(value = "/restaurants")
     public CompletableFuture<CreateRestaurantResponse> createRestaurant(@RequestBody @Valid CreateRestaurantRequest request) {
         return restaurantService.createRestaurant(request)
                 .thenApply(entityAndEventInfo -> new CreateRestaurantResponse(entityAndEventInfo.getEntityId()));

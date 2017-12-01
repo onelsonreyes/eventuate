@@ -1,9 +1,9 @@
-package com.karadak.eventuate.backend.aggregate;
+package com.karadak.emitter.backend.aggregate;
 
-import com.karadak.eventuate.backend.command.CreateRestaurantCommand;
-import com.karadak.eventuate.backend.command.RestaurantCommand;
-import com.karadak.eventuate.backend.event.RestaurantCreatedEvent;
-import com.karadak.eventuate.backend.model.CreateRestaurantRequest;
+import com.karadak.common.event.RestaurantCreatedEvent;
+import com.karadak.common.model.CreateRestaurantRequest;
+import com.karadak.emitter.backend.command.CreateRestaurantCommand;
+import com.karadak.emitter.backend.command.RestaurantCommand;
 import io.eventuate.Event;
 import io.eventuate.EventUtil;
 import io.eventuate.ReflectiveMutableCommandProcessingAggregate;

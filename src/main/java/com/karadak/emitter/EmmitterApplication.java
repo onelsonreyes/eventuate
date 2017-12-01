@@ -1,4 +1,4 @@
-package com.karadak.eventuate;
+package com.karadak.emitter;
 
 import io.eventuate.javaclient.driver.EventuateDriverConfiguration;
 import org.springframework.boot.SpringApplication;
@@ -13,9 +13,8 @@ import org.springframework.context.annotation.Import;
 @EnableAutoConfiguration
 @ComponentScan
 @Import({EventuateDriverConfiguration.class})
-public class EventuateApplication {
-
+public class EmmitterApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EventuateApplication.class, args);
+        SpringApplication.run(EmmitterApplication.class, args);
     }
 }

@@ -1,9 +1,9 @@
-package com.karadak.eventuate.backend.service;
+package com.karadak.emitter.backend.service;
 
-import com.karadak.eventuate.backend.aggregate.RestaurantAggregate;
-import com.karadak.eventuate.backend.command.CreateRestaurantCommand;
-import com.karadak.eventuate.backend.command.RestaurantCommand;
-import com.karadak.eventuate.backend.model.CreateRestaurantRequest;
+import com.karadak.common.model.CreateRestaurantRequest;
+import com.karadak.emitter.backend.aggregate.RestaurantAggregate;
+import com.karadak.emitter.backend.command.CreateRestaurantCommand;
+import com.karadak.emitter.backend.command.RestaurantCommand;
 import io.eventuate.AggregateRepository;
 import io.eventuate.EntityWithIdAndVersion;
 
